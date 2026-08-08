@@ -30,3 +30,270 @@ input::placeholder {
 button, input {
   font: inherit;
 }
+
+.tracker-main {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+}
+
+.tracker-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tracker-hero {
+  border-radius: 2rem;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4, #22c55e);
+  box-shadow: 0 30px 80px rgba(14, 165, 233, 0.18);
+}
+
+.tracker-card {
+  border-radius: 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tracker-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+.tracker-heading {
+  color: #0f172a;
+}
+
+.tracker-subheading {
+  color: #64748b;
+}
+
+.tracker-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: #0284c7;
+  color: white;
+  padding: 0.85rem 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tracker-button:hover {
+  background: #0369a1;
+}
+
+.tracker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: #f1f5f9;
+  color: #334155;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+}
+
+.tracker-box {
+  border-radius: 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.tracker-hero-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.tracker-hero-copy {
+  max-width: 100%;
+}
+
+.tracker-hero-label,
+.tracker-small-label {
+  color: rgba(236, 253, 255, 0.92);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.tracker-hero-title {
+  margin-top: 1rem;
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  font-weight: 700;
+}
+
+.tracker-hero-description,
+.tracker-card-description,
+.tracker-box-text {
+  margin-top: 1rem;
+  color: #e2e8f0;
+  line-height: 1.75;
+  max-width: 44rem;
+}
+
+.tracker-action-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tracker-pill,
+.tracker-status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.tracker-hero-card {
+  border-radius: 1.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 25px 70px rgba(15, 23, 42, 0.1);
+  backdrop-filter: blur(22px);
+  padding: 1.5rem;
+}
+
+.tracker-hero-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.25rem;
+}
+
+.tracker-hero-card-title {
+  margin-top: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.tracker-hero-note {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+  color: rgba(226, 232, 240, 0.88);
+}
+
+.tracker-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 1.5rem;
+}
+
+.tracker-section,
+.tracker-aside {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tracker-empty-state {
+  border-radius: 2rem;
+  border: 1px dashed rgba(148, 163, 184, 0.4);
+  background: #ffffff;
+  padding: 2.5rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+  text-align: center;
+}
+
+.tracker-empty-icon {
+  margin: 0 auto 1rem;
+  height: 3rem;
+  width: 3rem;
+  color: #94a3b8;
+}
+
+.tracker-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tracker-card-title {
+  margin-top: 0.75rem;
+  display: inline-block;
+  color: #0f172a;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.05;
+  text-decoration: none;
+}
+
+.tracker-date-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background: #f8fafc;
+  color: #475569;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tracker-card-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tracker-box-title {
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tracker-button-block {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .tracker-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tracker-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .tracker-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tracker-action-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tracker-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
